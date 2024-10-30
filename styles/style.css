@@ -58,13 +58,13 @@ ol {
   flex-direction: column;
   overflow-y: auto;
   position: relative;
-  height: 299px;
+  height: 298px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 21px;
   width: 100%;
   padding-bottom: 2px;
   height: 100%;
@@ -95,14 +95,14 @@ ol {
 
 .content__video-card {
   display: flex;
-  width: 394px;
+  inline-size: 394px;
   justify-content: space-between;
 }
 
 .content__video-card-thumbnail {
   display: flex;
   height: 103px;
-  width: 194px;
+  inline-size: 194px;
   object-fit: cover;
   object-position: center; 
 }
@@ -139,13 +139,14 @@ ol {
   text-decoration: none;
   color: #fff;
   display: block;
+  margin: 2px;
 }
 
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 29px;
   text-transform: uppercase;
   margin-bottom: 6px;
   text-overflow: ellipsis;
@@ -182,12 +183,14 @@ ol {
   cursor: pointer;
   outline: none;
   gap: 5px;
+  align-items: center;
 }
 
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
   position: relative;
+  margin: auto;
 }
 
 .search-form__textfield {
@@ -241,6 +244,11 @@ ol {
   margin: 2px;
 }
 
+.search-form__label:hover:not(:active) {
+text-decoration: underline;
+text-underline-position: under;
+}
+ 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display:block;
   content: '';
@@ -256,6 +264,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  text-underline-position: under;
 }
 
 .button:active {
@@ -271,18 +280,18 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__textfield:active {
-  outline: 1px solid #fff;
-}
-
 .search-form__textfield:focus {
   outline: none;
-  border-color: transparent;
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
+.search-form__label:has(.search-form__textfield:focus-visible:not(:active)) {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+  border-color: transparent;
 }
 
 .content__card-link {
@@ -293,6 +302,7 @@ ol {
 .content__card-link_current {
   background: #545050;
 }
+
 
 .content__card-link:hover {
   text-decoration: underline;
@@ -305,5 +315,4 @@ ol {
 .content__card-link_current:focus-visible{
   outline: 1px solid #fff;
   outline-offset: 1px;
-  margin: 2px;
 }
