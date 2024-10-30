@@ -191,6 +191,7 @@ ol {
   gap: 15px;
   position: relative;
   margin: auto;
+  padding-top: 3px;
 }
 
 .search-form__textfield {
