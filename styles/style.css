@@ -305,7 +305,7 @@ text-underline-position: under;
 }
 
 
-.content__card-link:hover {
+.content__card-link:hover:not(:active) {
   text-decoration: underline;
 }
 
