@@ -245,7 +245,7 @@ ol {
   margin: 2px;
 }
 
-.search-form__label:hover:not(:active) {
+.search-form__label:hover:not(:active) .search-form__label-text  {
 text-decoration: underline;
 text-underline-position: under;
 }
