@@ -263,7 +263,7 @@ text-underline-position: under;
   outline-offset: 1px;
 }
 
-.button:hover {
+.button:hover:not(:active) {
   text-decoration: underline;
   text-underline-position: under;
 }
