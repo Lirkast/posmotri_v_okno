@@ -245,11 +245,11 @@ ol {
   margin: 2px;
 }
 
-.search-form__label:hover:not(:active) .search-form__label-text  {
+.search-form__label:hover:not(:active) .search-form__label-text {
 text-decoration: underline;
 text-underline-position: under;
 }
- 
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display:block;
   content: '';
